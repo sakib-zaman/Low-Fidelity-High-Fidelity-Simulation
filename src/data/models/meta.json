@@ -1,0 +1,9 @@
+{
+  "threshold": 0.8201005025125628,
+  "feature_cols": [
+    "S",
+    "mu",
+    "delta"
+  ],
+  "max_incorrect_lf": 0.05
+}

@@ -1,0 +1,12 @@
+pybullet==3.2.6
+numpy==1.26.4
+scipy==1.13.0
+pandas==2.2.1
+h5py==3.11.0
+xgboost==2.0.3
+scikit-learn==1.4.2
+shap==0.45.0
+matplotlib==3.8.4
+seaborn==0.13.2
+tqdm==4.66.2
+joblib==1.4.0

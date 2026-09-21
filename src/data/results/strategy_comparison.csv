@@ -1,0 +1,5 @@
+Strategy,LF_Rate_%,Incorrect_LF_%,Force_MAE_N,Force_MAE_CI_lo,Force_MAE_CI_hi,Force_NRMSE_%,Success_Agree_%,Safety_Agree_%,Speedup_vs_FH,Total_Time_s
+Fixed LF,100.0,64.0,13.27,8.13,19.0,30.08,67.2,67.2,0.94,2.0
+Fixed HF,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,1.0,1.9
+Rule-Based,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,1.0,1.9
+AI-Guided,20.0,40.0,0.03,0.01,0.05,0.1,98.4,98.4,1.06,1.8
