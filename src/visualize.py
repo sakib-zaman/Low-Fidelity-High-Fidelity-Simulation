@@ -38,6 +38,7 @@ def print_result(result):
     print(f"  Safety violated:   {result['safety_violated']}")
     print(f"  Connectors failed: {result['n_connectors_failed']}")
     print(f"  Wall-clock time:   {result['wall_time']:.1f} s")
+    print(f"  Placement success: {result.get('placement_success', False)}")
 
     if result["failure_sequence"]:
         print("\n  Connector failure sequence:")

@@ -79,7 +79,7 @@ class HDDRemovalTask:
                     self.client, self.hdd.cover_id, self.hdd.housing_id,
                     anchor_lid_local=anchor,
                     anchor_housing_local=[anchor[0], anchor[1], housing_top_z],
-                    k=CONNECTOR_K, c=CONNECTOR_C, strength=s_i, connector_id=i
+                    k=CONNECTOR_K / len(HDD_ANCHORS), c=CONNECTOR_C / len(HDD_ANCHORS), strength=s_i, connector_id=i
                 )
                 self.connectors.append(conn)
 
