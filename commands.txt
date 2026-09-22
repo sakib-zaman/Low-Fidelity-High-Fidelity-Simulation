@@ -1,0 +1,6 @@
+conda create -n lofi-hifi-sim python=3.10 -y
+conda activate lofi-hifi-sim
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+python src/visualize.py --fidelity hf --strength 70 --friction 0.45 --misalignment-mm 4

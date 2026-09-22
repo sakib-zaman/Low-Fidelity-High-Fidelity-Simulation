@@ -1,0 +1,71 @@
+(lofi-hifi-sim) D:\PyBullet Projects\Low-Fidelity-High-Fidelity-Simulation>python src/visualize.py --fidelity hf --strength 40 --friction 0.25 --misalignment-mm 0
+pybullet build time: Sep 22 2026 01:32:33
+
+============================================================
+  MSEC 2027 — Multi-Fidelity HDD Disassembly Demo
+============================================================
+  Fidelity:      HIGH (8 connectors)
+  Strength:      40.0 N
+  Friction:      0.25
+  Misalignment:  0.0 mm
+============================================================
+starting thread 0
+started testThreads thread 0 with threadHandle 000000000000018C
+argc=2
+argv[0] = --unused
+argv[1] = --start_demo_name=Physics Server
+ExampleBrowserThreadFunc started
+Version = 4.6.0 NVIDIA 591.91
+Vendor = NVIDIA Corporation
+Renderer = NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2
+b3Printf: Selected demo: Physics Server
+starting thread 0
+started MotionThreads thread 0 with threadHandle 0000000000000564
+MotionThreadFunc thread started
+Panda loaded (body ID=96). Base at [0.0, 0.0, 0.7300000000000001]
+  [Phase 0] Moving to pre-grasp...
+  [Phase 1] Descending to grasp position...
+  [Phase 2] Grasping cover...
+  [Phase 2] Grasp stabilized; connectors activated.
+  [Phase 3] Pulling cover upward...
+  [Phase 3] Separation success at t=1.075s (Lift=25.2mm)
+  [Phase 4] Transporting cover to placement area...
+  [Phase 4] Lowering cover onto table...
+  [Phase 5] Releasing cover...
+  [Phase 5] Cover position after release: [0.7143, -0.1785, 0.6815]
+  [Phase 5] Placement verified: True
+  [Phase 6] Returning to home position...
+
+============================================================
+  TASK RESULT
+============================================================
+  Outcome:           ✓ SUCCESS
+  Peak force:        31.3 N
+  Max rotation:      0.1°
+  Safety violated:   False
+  Connectors failed: 8
+  Wall-clock time:   209.5 s
+
+  Connector failure sequence:
+    Connector 0: t = 0.2333 s
+    Connector 1: t = 0.2417 s
+    Connector 3: t = 0.2417 s
+    Connector 5: t = 0.2500 s
+    Connector 2: t = 0.2583 s
+    Connector 6: t = 0.2583 s
+    Connector 4: t = 0.2667 s
+    Connector 7: t = 0.2750 s
+============================================================
+
+  Simulation complete. Press Enter to close the window...
+numActiveThreads = 0
+stopping threads
+Thread with taskId 0 with handle 0000000000000564 exiting
+Thread TERMINATED
+finished
+numActiveThreads = 0
+btShutDownExampleBrowser stopping threads
+Thread with taskId 0 with handle 000000000000018C exiting
+Thread TERMINATED
+
+(lofi-hifi-sim) D:\PyBullet Projects\Low-Fidelity-High-Fidelity-Simulation>
