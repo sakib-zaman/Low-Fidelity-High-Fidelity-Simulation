@@ -1,0 +1,9 @@
+{
+  "threshold": 0.79,
+  "features": [
+    "task",
+    "strength",
+    "friction",
+    "misalignment"
+  ]
+}

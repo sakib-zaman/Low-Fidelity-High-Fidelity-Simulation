@@ -75,13 +75,27 @@ class HDDRemovalTask:
         else:
             for i, anchor in enumerate(HDD_ANCHORS):
                 s_i = (self.S * HDD_STRENGTH_WEIGHTS[i]) / 8.0
-                conn = Connector(
-                    self.client, self.hdd.cover_id, self.hdd.housing_id,
+                number_of_connectors = len(HDD_ANCHORS)
+
+                connector = Connector(
+                    self.client,
+                    self.hdd.cover_id,
+                    self.hdd.housing_id,
                     anchor_lid_local=anchor,
-                    anchor_housing_local=[anchor[0], anchor[1], housing_top_z],
-                    k=CONNECTOR_K / len(HDD_ANCHORS), c=CONNECTOR_C / len(HDD_ANCHORS), strength=s_i, connector_id=i
+                    anchor_housing_local=[
+                        anchor[0],
+                        anchor[1],
+                        housing_top_z,
+                    ],
+                    k=CONNECTOR_K / number_of_connectors,
+                    c=CONNECTOR_C / number_of_connectors,
+                    strength=(
+                        self.S
+                        * HDD_STRENGTH_WEIGHTS[i]
+                        / number_of_connectors
+                    ),
+                    connector_id=i,
                 )
-                self.connectors.append(conn)
 
     def _move_cartesian(self, target_pos, target_orn=None, threshold=0.008, max_steps=400):
         if target_orn is None:
